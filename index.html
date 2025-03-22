@@ -29,9 +29,13 @@
             font-weight: bold;
         }
         .hero-section {
-            background: #f9f9f9;
-            padding: 2rem;
+            background: url('images/Background.jpg') no-repeat center center/cover;
+            color: white;
             text-align: center;
+            padding: 5rem 1rem;
+        }
+        main {
+            padding: 2rem;
         }
         footer {
             background: #333;
@@ -43,12 +47,23 @@
             color: #4682B4;
             text-decoration: none;
         }
+        .service-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .service-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <img src="logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
+        <img src="images/logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
         <h1>Able Aide</h1>
         <p>Your Journey, Our Support</p>
     </header>
@@ -62,23 +77,50 @@
         <a href="faqs.html">FAQs</a>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Background Image -->
     <section class="hero-section">
         <h2>Welcome to Able Aide</h2>
         <p>We specialize in providing personalized NDIS support services across Australia.</p>
-        <a href="#services">Learn More</a>
+        <a href="#services" style="background: white; color: #4682B4; padding: 0.5rem 1rem; text-decoration: none; border-radius: 4px;">Learn More</a>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
+    <!-- Main Content -->
+    <main>
         <h2>Our Services</h2>
-        <ul>
-            <li><strong>Core Supports:</strong> Daily living assistance, personal care</li>
-            <li><strong>Capacity Building:</strong> Skill development, education, employment readiness.</li>
-            <li><strong>Support Coordination:</strong> Assistance navigating the NDIS system.</li>
-            <li><strong>Plan Management:</strong> Coming soon!</li>
-        </ul>
-    </section>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div class="service-item">
+                <img src="images/Main page pic.jpg" alt="Core Supports">
+                <div>
+                    <h3>Core Supports</h3>
+                    <p>Daily living assistance, personal care, household tasks, and community participation.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <img src="images/Main page pic.jpg" alt="Capacity Building">
+                <div>
+                    <h3>Capacity Building</h3>
+                    <p>Skill development, education, employment readiness, and independent living skills.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <img src="images/Main page pic.jpg" alt="Support Coordination">
+                <div>
+                    <h3>Support Coordination</h3>
+                    <p>Assistance navigating the NDIS system, connecting with service providers, and managing your plan.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <img src="images/Main page pic.jpg" alt="Plan Management">
+                <div>
+                    <h3>Plan Management (Coming Soon)</h3>
+                    <p>Managing funding, invoices, and service providers on your behalf.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer Section -->
     <footer>
