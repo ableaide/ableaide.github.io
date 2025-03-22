@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Able Aide</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Get in touch with Able Aide for personalized NDIS support services. Fill out our contact form or reach us via email, phone, or social media.">
+    <meta name="keywords" content="NDIS support, contact Able Aide, disability services, get in touch">
+    <meta name="author" content="Able Aide">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,25 +35,6 @@
         main {
             padding: 2rem;
         }
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background: #4682B4;
-            color: white;
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
         footer {
             background: #333;
             color: white;
@@ -60,12 +45,87 @@
             color: #4682B4;
             text-decoration: none;
         }
+        .hero-section {
+            background: url('images/Background 1.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .contact-info div {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+        }
+        .contact-form {
+            margin-top: 2rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background: #4682B4;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #3a6ea5;
+        }
+        .logo-input {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+        .logo-input img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .cta {
+            background: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+        }
+        .cta a {
+            background: white;
+            color: #4682B4;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <img src="Logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
+        <img src="images/Logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
         <h1>Contact Us</h1>
     </header>
 
@@ -78,21 +138,59 @@
         <a href="faqs.html">FAQs</a>
     </nav>
 
+    <!-- Hero Section with Background Image -->
+    <section class="hero-section">
+        <h2>Get in Touch</h2>
+        <p>We’re here to help! Reach out to us for personalized support and guidance.</p>
+    </section>
+
     <!-- Main Content -->
     <main>
-        <h2>Get in Touch</h2>
-        <form action="mailto:able.aide@outlook.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <!-- Contact Information -->
+        <section>
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:able.aide@outlook.com">able.aide@outlook.com</a></p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:0435039110">0435 039 110</a></p>
+                </div>
+                <div>
+                    <h3>Social Media</h3>
+                    <p>
+                        <a href="https://www.facebook.com/profile.php?id=61554652734205">Facebook</a> |
+                        <a href="https://twitter.com/AbleAide91">X</a> |
+                        <a href="https://www.tiktok.com/@ableaide">TikTok</a>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <!-- Contact Form -->
+        <section>
+            <h2>Send Us a Message</h2>
+            <div class="contact-form">
+                <div class="logo-input">
+                    <img src="images/Logo.jpg" alt="Able Aide Logo">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+                <img src="images/Contact.jpg" alt="Contact Us" style="width: 100%; max-width: 400px; margin-top: 20px; border-radius: 8px;">
+            </div>
+        </section>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+        <!-- Call-to-Action Section -->
+        <section class="cta">
+            <h2>Need Immediate Support?</h2>
+            <p>Contact us today to discuss how our services can meet your unique needs and help you thrive.</p>
+            <a href="mailto:able.aide@outlook.com">Email Us Now</a>
+        </section>
     </main>
 
     <!-- Footer Section -->
