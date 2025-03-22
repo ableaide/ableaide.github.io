@@ -8,6 +8,13 @@
     <meta name="description" content="Able Aide provides personalized NDIS support services across Australia, including core supports, capacity building, and support coordination.">
     <meta name="keywords" content="NDIS support, disability services, core supports, capacity building, support coordination">
     <meta name="author" content="Able Aide">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Able Aide | NDIS Support Services">
+    <meta property="og:description" content="Able Aide provides personalized NDIS support services across Australia, including core supports, capacity building, and support coordination.">
+    <meta property="og:image" content="https://ableaide.github.io/images/logo.jpg">
+    <meta property="og:url" content="https://ableaide.github.io/index.html">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ableaide.github.io/index.html">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,8 +65,9 @@
             margin-bottom: 1rem;
         }
         .service-item img {
-            width: 100px;
-            height: 100px;
+            width: 100%;
+            max-width: 150px;
+            height: auto;
             border-radius: 8px;
         }
         .cta-button {
@@ -70,9 +78,44 @@
             border-radius: 8px;
             font-weight: bold;
         }
+        /* Hover Effects */
+        a:hover {
+            color: #3a6ea5;
+        }
+        .cta-button:hover {
+            background: #3a6ea5;
+        }
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 3rem 1rem;
+            }
+            nav a {
+                margin: 0 5px;
+            }
+            main {
+                padding: 1rem;
+            }
+            .service-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+            .cta-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main" class="skip-link" style="position: absolute; top: -40px; left: 0; background: #4682B4; color: white; padding: 0.5rem; z-index: 100;">Skip to Content</a>
+
     <!-- Header Section -->
     <header>
         <img src="images/logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
@@ -97,11 +140,11 @@
     </section>
 
     <!-- Main Content -->
-    <main>
+    <main id="main">
         <h2>Our Services</h2>
         <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
             <div class="service-item">
-                <img src="images/Core Supports.jpg" alt="Daily Living Assistance and Personal Care">
+                <img src="images/Core Supports.jpg" alt="Daily Living Assistance and Personal Care" loading="lazy">
                 <div>
                     <h3>Core Supports</h3>
                     <p>Daily living assistance, personal care, household tasks, and community participation.</p>
@@ -109,7 +152,7 @@
             </div>
 
             <div class="service-item">
-                <img src="images/Capacity Building.jpg" alt="Skill Development and Employment Readiness">
+                <img src="images/Capacity Building.jpg" alt="Skill Development and Employment Readiness" loading="lazy">
                 <div>
                     <h3>Capacity Building</h3>
                     <p>Skill development, education, employment readiness, and independent living skills.</p>
@@ -117,7 +160,7 @@
             </div>
 
             <div class="service-item">
-                <img src="images/SC.jpg" alt="Support Coordination Services">
+                <img src="images/SC.jpg" alt="Support Coordination Services" loading="lazy">
                 <div>
                     <h3>Support Coordination</h3>
                     <p>Assistance navigating the NDIS system, connecting with service providers, and managing your plan.</p>
@@ -125,7 +168,7 @@
             </div>
 
             <div class="service-item">
-                <img src="images/Plan Management.jpg" alt="Plan Management Services">
+                <img src="images/Plan Management.jpg" alt="Plan Management Services" loading="lazy">
                 <div>
                     <h3>Plan Management (Coming Soon)</h3>
                     <p>Managing funding, invoices, and service providers on your behalf.</p>
