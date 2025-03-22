@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs | Able Aide</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Find answers to frequently asked questions about Able Aide's NDIS support services. Learn more about eligibility, consultations, and our services across Australia.">
+    <meta name="keywords" content="NDIS FAQs, disability support FAQs, Able Aide FAQs, NDIS eligibility, book consultation">
+    <meta name="author" content="Able Aide">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,12 +45,45 @@
             color: #4682B4;
             text-decoration: none;
         }
+        .hero-section {
+            background: url('images/Background.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        h3 {
+            color: #4682B4;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        h3:hover {
+            color: #3a6ea5;
+        }
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        .cta {
+            background: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+        }
+        .cta a {
+            background: white;
+            color: #4682B4;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <img src="Logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
+        <img src="images/Logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
         <h1>FAQs</h1>
     </header>
 
@@ -59,22 +96,58 @@
         <a href="faqs.html">FAQs</a>
     </nav>
 
+    <!-- Hero Section with Background Image -->
+    <section class="hero-section">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about our NDIS support services.</p>
+    </section>
+
     <!-- Main Content -->
     <main>
-        <h2>Frequently Asked Questions</h2>
-
-        <h3>What is NDIS?</h3>
-        <p>The National Disability Insurance Scheme (NDIS) provides support to people with disabilities to achieve their goals and improve their quality of life.</p>
-
-        <h3>Who can access NDIS services?</h3>
-        <p>Anyone under the age of 65 who meets the eligibility criteria can access NDIS services.</p>
-
-        <h3>How do I book a consultation?</h3>
-        <p>Contact us via email or phone, and our team will guide you through the process.</p>
-
-        <h3>Do you operate Australia-wide?</h3>
-        <p>Yes, we provide services across Australia, with a focus on Melbourne, Victoria.</p>
+        <div class="faq-item">
+            <h3>What is NDIS?</h3>
+            <p>
+                The National Disability Insurance Scheme (NDIS) provides support to people with disabilities to achieve their goals and improve their quality of life.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3>Who can access NDIS services?</h3>
+            <p>
+                Anyone under the age of 65 who meets the eligibility criteria can access NDIS services. Eligibility is based on factors such as residency, disability type, and functional capacity.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I book a consultation?</h3>
+            <p>
+                Contact us via email or phone, and our team will guide you through the process. We’ll schedule a consultation to discuss your needs and create a personalized plan.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you operate Australia-wide?</h3>
+            <p>
+                Yes, we provide services across Australia, with a focus on Melbourne, Victoria. Our team is available to assist participants in various regions.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3>How much does it cost to access your services?</h3>
+            <p>
+                The cost of our services depends on your NDIS plan and funding allocation. We’ll work with you to ensure all services are covered within your plan.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3>What types of support do you offer?</h3>
+            <p>
+                We offer Core Supports (e.g., daily living assistance, personal care), Capacity Building (e.g., skill development, employment readiness), Support Coordination, and Plan Management.
+            </p>
+        </div>
     </main>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+        <h2>Still Have Questions?</h2>
+        <p>Contact us today for personalized guidance and support tailored to your needs.</p>
+        <a href="contact.html">Get in Touch</a>
+    </section>
 
     <!-- Footer Section -->
     <footer>
