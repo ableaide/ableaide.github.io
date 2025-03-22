@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Able Aide</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn about Able Aide, a trusted provider of personalized NDIS support services across Australia. Empowering individuals with disabilities to live their best lives.">
+    <meta name="keywords" content="NDIS support, disability services, community support, personalized care">
+    <meta name="author" content="Able Aide">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,12 +45,59 @@
             color: #4682B4;
             text-decoration: none;
         }
+        .hero-section {
+            background: url('images/Background 1.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        .mission-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        .mission-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+        .mission-text {
+            flex: 1;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+        }
+        .cta {
+            background: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+        }
+        .cta a {
+            background: white;
+            color: #4682B4;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <img src="Logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
+        <img src="images/Logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
         <h1>About Us</h1>
     </header>
 
@@ -59,27 +110,97 @@
         <a href="faqs.html">FAQs</a>
     </nav>
 
+    <!-- Hero Section with Background Image -->
+    <section class="hero-section">
+        <h2>Welcome to Able Aide</h2>
+        <p>We are dedicated to empowering individuals with disabilities through personalized NDIS support services.</p>
+    </section>
+
     <!-- Main Content -->
     <main>
-        <h2>Our Mission</h2>
-        <p>
-            At Able Aide, we are dedicated to empowering individuals with disabilities to live their best lives through personalized NDIS support services. 
-            Our team is passionate about providing high-quality care, fostering independence, and building meaningful connections.
-        </p>
+        <!-- Introduction Section -->
+        <section>
+            <h2>Our Purpose</h2>
+            <p>
+                At Able Aide, we are driven by a singular purpose: to empower individuals with disabilities to live their best lives. 
+                As a trusted provider of personalized NDIS support services, we are committed to fostering independence, building meaningful connections, 
+                and creating opportunities for growth.
+            </p>
+        </section>
 
-        <h2>Our Team</h2>
-        <p>
-            Our team consists of experienced professionals who are committed to delivering compassionate and reliable support. 
-            We believe in creating a supportive environment where participants can thrive.
-        </p>
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <div class="mission-text">
+                <h2>Our Mission</h2>
+                <p>
+                    Our mission is to deliver compassionate, reliable, and tailored support that enables participants to achieve their goals 
+                    and thrive within their communities. Whether it’s assisting with daily living activities, skill development, or navigating 
+                    the complexities of the NDIS system, we are here to walk alongside you every step of the way.
+                </p>
+            </div>
+            <img src="images/Main page pic.jpg" alt="Empowering Participants Through Personalized Support">
+        </section>
 
-        <h2>Our Values</h2>
-        <ul>
-            <li><strong>Compassion:</strong> We treat every participant with empathy and respect.</li>
-            <li><strong>Inclusivity:</strong> Everyone deserves equal opportunities to succeed.</li>
-            <li><strong>Reliability:</strong> You can count on us to be there when you need us.</li>
-            <li><strong>Growth:</strong> We’re committed to continuous learning and improvement.</li>
-        </ul>
+        <!-- Approach Section -->
+        <section>
+            <h2>Our Approach</h2>
+            <p>
+                We believe that every individual deserves personalized care and attention. That’s why we take the time to understand your unique 
+                needs and aspirations. Our team works collaboratively with participants, families, and service providers to design and implement 
+                support plans that truly make a difference.
+            </p>
+        </section>
+
+        <!-- Team Section -->
+        <section>
+            <h2>Our Team</h2>
+            <p>
+                Behind Able Aide is a team of experienced and dedicated professionals who share a passion for making a positive impact. 
+                Each member of our team undergoes rigorous training to ensure they provide the highest standard of care. 
+                With empathy, respect, and reliability at the core of everything we do, you can trust us to be there when you need us most.
+            </p>
+        </section>
+
+        <!-- Values Section -->
+        <section>
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Compassion:</strong> We treat every participant with kindness, empathy, and respect.</li>
+                <li><strong>Inclusivity:</strong> We celebrate diversity and ensure equal opportunities for all.</li>
+                <li><strong>Reliability:</strong> We are dependable partners in your journey, always available to support you.</li>
+                <li><strong>Growth:</strong> We are committed to continuous learning and improvement, both for ourselves and the participants we serve.</li>
+            </ul>
+        </section>
+
+        <!-- Services Section -->
+        <section>
+            <h2>Our Services</h2>
+            <p>
+                From core supports like personal care and community participation to capacity-building programs, we offer a wide range of services 
+                designed to meet the unique needs of each participant. Our goal is to help you navigate the NDIS system with confidence and ease, 
+                ensuring you receive the support you deserve.
+            </p>
+        </section>
+
+        <!-- Community Gallery Section -->
+        <section>
+            <h2>Our Community</h2>
+            <p>
+                We believe in the power of community and inclusivity. Our team works closely with participants and their families to create supportive 
+                environments where everyone can thrive.
+            </p>
+            <div class="gallery">
+                <img src="images/Community 1.jpg" alt="Community Members Engaging in Activities">
+                <img src="images/Community 2.jpg" alt="Inclusive Environment for All">
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="cta">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us today to learn more about our services and how we can support you or your loved ones.</p>
+            <a href="contact.html">Get in Touch</a>
+        </section>
     </main>
 
     <!-- Footer Section -->
