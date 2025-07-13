@@ -30,7 +30,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <!-- Optional: Add this once the page is created -->
+  <!-- Optional: Add if you have this page -->
   <url>
     <loc>https://ableaide.com.au/disability-support-worker.html </loc>
     <lastmod>2025-06-20</lastmod>
