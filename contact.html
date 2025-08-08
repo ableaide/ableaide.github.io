@@ -73,7 +73,7 @@
             color: #333;
             background: #fff;
         }
-        /* Skip Link for Accessibility */
+        /* Skip Link */
         .skip-link {
             position: absolute;
             top: -40px;
@@ -192,26 +192,17 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
-        /* Contact Form */
+        /* Form + Image Layout */
+        .contact-container {
+            display: flex;
+            gap: 3rem;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 2.5rem 0;
+        }
         .contact-form {
+            flex: 1;
             max-width: 500px;
-            margin: 2.5rem auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .logo-input {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-        .logo-input img {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            border: 2px solid #4682B4;
         }
         .contact-form input,
         .contact-form textarea {
@@ -236,13 +227,15 @@
         .contact-form button:hover {
             background: #3a6ea5;
         }
-        /* Image Below Form */
-        .contact-form img {
-            width: 100%;
+        /* Contact Image */
+        .contact-image {
+            flex: 1;
             max-width: 400px;
-            margin-top: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .contact-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
         /* Call to Action */
         .cta {
@@ -304,6 +297,13 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-image {
+                max-width: 350px;
+            }
             .hero-section h2 {
                 font-size: 2.2rem;
             }
@@ -377,37 +377,30 @@
             </div>
         </section>
 
-        <!-- Contact Form -->
+        <!-- Form + Image Side by Side -->
         <section>
             <h2>Send Us a Message</h2>
-            <div class="contact-form">
-                <form action="https://formspree.io/f/movlpbyr" method="POST">
-                    <!-- Hidden redirect to thank-you page -->
-                    <input type="hidden" name="_next" value="https://www.ableaide.com.au/thank-you.html" />
-                    <!-- Auto-scroll to top after submit -->
-                    <input type="hidden" name="_scroll_to_top" value="true" />
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/movlpbyr" method="POST">
+                        <!-- Hidden redirect -->
+                        <input type="hidden" name="_next" value="https://www.ableaide.com.au/thank-you.html" />
+                        <input type="hidden" name="_scroll_to_top" value="true" />
 
-                    <!-- Logo + Name Input -->
-                    <div class="logo-input">
-                        <img src="images/logo.jpg" alt="Able Aide Logo">
+                        <!-- Form Fields -->
                         <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
 
-                    <!-- Email -->
-                    <input type="email" name="email" placeholder="Your Email" required>
-
-                    <!-- Phone (Optional) -->
-                    <input type="tel" name="phone" placeholder="Your Phone (Optional)">
-
-                    <!-- Message -->
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-
-                    <!-- Submit Button -->
-                    <button type="submit">Submit</button>
-
-                    <!-- ✅ Fixed Image Path: lowercase, no spaces -->
+                <!-- Contact Image -->
+                <div class="contact-image">
                     <img src="images/contact.jpg" alt="Contact Us - Able Aide Support Team" loading="lazy">
-                </form>
+                </div>
             </div>
         </section>
 
