@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs | Able Aide</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Find answers to frequently asked questions about Able Aide's NDIS support services. Learn more about eligibility, consultations, and our services across Australia.">
-    <meta name="keywords" content="NDIS FAQs, disability support FAQs, Able Aide FAQs, NDIS eligibility, book consultation">
-    <meta name="author" content="Able Aide">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs | Able Aide Disability Support Services</title>
 
-    <!-- Google Tag (gtag.js) -->
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Find answers to frequently asked questions about Able Aide's NDIS support services in Melbourne, Werribee, and Geelong. Learn about eligibility, consultations, and personalized care." />
+    <meta name="keywords" content="NDIS FAQs, disability support Melbourne, Able Aide support, NDIS eligibility, book consultation" />
+    <meta name="author" content="Able Aide Pty Ltd" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="FAQs | Able Aide" />
+    <meta property="og:description" content="Answers to common questions about our NDIS support services in Melbourne and Victoria." />
+    <meta property="og:image" content="https://www.ableaide.com.au/images/logo.jpg" />
+    <meta property="og:url" content="https://www.ableaide.com.au/faqs.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ableaide.com.au/faqs.html" />
+
+    <!-- Google Analytics (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-651FXYJL03"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -18,86 +30,277 @@
         gtag('config', 'G-651FXYJL03');
     </script>
 
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is NDIS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The National Disability Insurance Scheme (NDIS) provides support to people with disabilities to achieve their goals and improve their quality of life."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can access NDIS services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anyone under the age of 65 who meets the eligibility criteria can access NDIS services. Eligibility is based on factors such as residency, disability type, and functional capacity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book a consultation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contact us via email or phone, and our team will guide you through the process. We’ll schedule a consultation to discuss your needs and create a personalized plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you operate Australia-wide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide services across Australia, with a focus on Melbourne, Victoria. Our team is available to assist participants in various regions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to access your services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of our services depends on your NDIS plan and funding allocation. We’ll work with you to ensure all services are covered within your plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of support do you offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer Core Supports (e.g., daily living assistance, personal care), Capacity Building (e.g., skill development, employment readiness), Support Coordination, and Plan Management."
+          }
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Able Aide Pty Ltd",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.ableaide.com.au/images/logo.jpg"
+        }
+      }
+    }
+    </script>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset & Base */
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            box-sizing: border-box;
         }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #fff;
+        }
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #4682B4;
+            color: white;
+            padding: 0.5rem 1rem;
+            z-index: 1000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        /* Header */
         header {
             background: #4682B4;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 1.5rem 1rem;
         }
+        header img {
+            max-width: 160px;
+            border-radius: 8px;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+        /* Navigation */
         nav {
             background: #f9f9f9;
             padding: 1rem;
             text-align: center;
+            border-bottom: 1px solid #eee;
         }
         nav a {
             color: #4682B4;
             text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1.1rem;
         }
-        main {
-            padding: 2rem;
+        nav a:hover {
+            text-decoration: underline;
         }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        a {
-            color: #4682B4;
-            text-decoration: none;
-        }
+        /* Hero Section */
         .hero-section {
-            background: url('images/Background.jpg') no-repeat center center/cover;
+            background: url('images/background.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 5rem 1rem;
+            padding: 7rem 1rem;
+            position: relative;
         }
-        h3 {
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-section > * {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .hero-section p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Main Content */
+        main {
+            padding: 2.5rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        main h3 {
             color: #4682B4;
             cursor: pointer;
             transition: color 0.3s ease;
+            margin: 1.8rem 0 0.8rem;
         }
-        h3:hover {
+        main h3:hover {
             color: #3a6ea5;
         }
-        .faq-item {
-            margin-bottom: 1.5rem;
+        .faq-item p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
+        /* Call to Action */
         .cta {
             background: #4682B4;
             color: white;
             text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-            border-radius: 8px;
+            padding: 2.5rem;
+            margin: 3rem auto;
+            border-radius: 12px;
+            max-width: 900px;
+        }
+        .cta h2 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 2.2rem;
+        }
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: rgba(255,255,255,0.95);
         }
         .cta a {
             background: white;
             color: #4682B4;
-            padding: 0.5rem 1rem;
+            padding: 0.8rem 2rem;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 6px;
             font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .cta a:hover {
+            background: #f0f0f0;
+        }
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0.6rem 0;
+        }
+        footer a {
+            color: #4682B4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .social-links {
+            margin: 1.3rem 0;
+        }
+        footer .social-links a {
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section h2 {
+                font-size: 2.2rem;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 5rem 1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+            .cta {
+                padding: 1.8rem;
+            }
+            .cta h2 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
+    <a href="#main" class="skip-link">Skip to Content</a>
+
+    <!-- Header -->
     <header>
-        <img src="images/Logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
+        <img src="images/logo.jpg" alt="Able Aide Logo" />
         <h1>FAQs</h1>
     </header>
 
-    <!-- Navigation Menu -->
+    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -106,14 +309,14 @@
         <a href="faqs.html">FAQs</a>
     </nav>
 
-    <!-- Hero Section with Background Image -->
+    <!-- Hero Section -->
     <section class="hero-section">
         <h2>Frequently Asked Questions</h2>
         <p>Find answers to common questions about our NDIS support services.</p>
     </section>
 
     <!-- Main Content -->
-    <main>
+    <main id="main">
         <div class="faq-item">
             <h3>What is NDIS?</h3>
             <p>
@@ -152,22 +355,22 @@
         </div>
     </main>
 
-    <!-- Call-to-Action Section -->
+    <!-- Call to Action -->
     <section class="cta">
         <h2>Still Have Questions?</h2>
         <p>Contact us today for personalized guidance and support tailored to your needs.</p>
         <a href="contact.html">Get in Touch</a>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>Contact Us:</p>
-        <p>Email: <a href="mailto:able.aide@outlook.com">able.aide@outlook.com</a></p>
-        <p>Phone: 0435 039 110</p>
-        <div>
-            <a href="https://www.facebook.com/profile.php?id=61554652734205">Facebook</a> |
-            <a href="https://twitter.com/AbleAide91">X</a> |
-            <a href="https://www.tiktok.com/@ableaide">TikTok</a>
+        <p><strong>Contact Us</strong></p>
+        <p>Email: <a href="mailto:able.aide@outlook.com.au">able.aide@outlook.com.au</a></p>
+        <p>Phone: <strong>0435 039 110</strong></p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61554652734205" target="_blank">Facebook</a> |
+            <a href="https://www.tiktok.com/@ableaide" target="_blank">TikTok</a> |
+            <a href="https://x.com/AbleAideSupport" target="_blank">X (Twitter)</a>
         </div>
     </footer>
 </body>
