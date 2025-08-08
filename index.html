@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Able Aide | Disability Support Services in Melbourne</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Able Aide provides professional disability support workers and NDIS-approved home care services across Melbourne and surrounding suburbs.">
-    <meta name="keywords" content="disability support worker, NDIS services, home care Melbourne, personal care assistant, support coordination">
-    <meta name="author" content="Able Aide">
+    <meta name="description" content="Able Aide provides professional disability support workers and NDIS-approved home care services across Melbourne and surrounding suburbs." />
+    <meta name="keywords" content="disability support worker, NDIS services, home care Melbourne, personal care assistant, support coordination" />
+    <meta name="author" content="Able Aide" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Able Aide | Disability Support Services in Melbourne">
-    <meta property="og:description" content="Able Aide provides professional disability support workers and NDIS-approved home care services across Melbourne and surrounding suburbs.">
-    <meta property="og:image" content="https://ableaide.github.io/images/logo.jpg ">
-    <meta property="og:url" content="https://ableaide.github.io/index.html ">
-    <meta property="og:type" content="website">
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Able Aide | Disability Support Services in Melbourne" />
+    <meta property="og:description" content="Compassionate and reliable disability support services for NDIS participants in Melbourne, Werribee, Sunshine, and Geelong." />
+    <meta property="og:image" content="https://www.ableaide.com.au/assets/img/logo.jpg" />
+    <meta property="og:url" content="https://www.ableaide.com.au" />
+    <meta property="og:type" content="website" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://ableaide.github.io/index.html ">
+    <link rel="canonical" href="https://www.ableaide.com.au" />
 
-    <!-- Google Tag (gtag.js) -->
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Analytics (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-651FXYJL03"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -29,173 +33,331 @@
         gtag('config', 'G-651FXYJL03');
     </script>
 
-    <!-- Structured Data (Schema.org) -->
+    <!-- Structured Data (Schema.org) - Clean & Valid -->
     <script type="application/ld+json">
     {
-      "@context": " https://schema.org ",
+      "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Able Aide",
-      "url": "https://ableaide.github.io/ ",
-      "logo": "https://ableaide.github.io/images/logo.jpg ",
+      "url": "https://www.ableaide.com.au",
+      "logo": "https://www.ableaide.com.au/assets/img/logo.jpg",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "0435 039 110",
-        "contactType": "Customer Service"
+        "contactType": "Customer Service",
+        "areaServed": "Victoria, Australia",
+        "availableLanguage": "English"
+      },
+      "email": "able.aide@outlook.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Victoria",
+        "addressCountry": "Australia"
       },
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61554652734205",
-        " https://twitter.com/AbleAide91 ",
-        "https://www.tiktok.com/ @ableaide"
-      ]
+        "https://twitter.com/AbleAide91",
+        "https://www.tiktok.com/@ableaide"
+      ],
+      "description": "Able Aide provides compassionate and reliable disability support services for NDIS participants across Melbourne and surrounding areas."
     }
     </script>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset & Base Styles */
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        /* Skip Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #4682B4;
+            color: white;
+            padding: 0.5rem 1rem;
+            z-index: 1000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Header */
         header {
             background: #4682B4;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 1.2rem 1rem;
         }
+        header img {
+            max-width: 160px;
+            margin-bottom: 0.5rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0.2rem 0;
+        }
+        header p {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
         nav {
             background: #f9f9f9;
             padding: 1rem;
             text-align: center;
+            border-bottom: 1px solid #eee;
         }
         nav a {
             color: #4682B4;
             text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
+            margin: 0 12px;
+            font-weight: 600;
+            font-size: 1rem;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
         .hero-section {
-            background: url('images/Background.jpg') no-repeat center center/cover;
+            background: url('assets/img/Background.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 5rem 1rem;
+            padding: 6rem 1rem;
+            position: relative;
         }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-section > * {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: #4682B4;
+            color: white;
+            padding: 0.8rem 1.8rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #3a6ea5;
+            text-decoration: none;
+        }
+
+        /* Intro Section */
+        .intro-section {
+            margin: 3rem auto;
+            max-width: 900px;
+            text-align: center;
+            padding: 0 1rem;
+            line-height: 1.8;
+        }
+        .intro-section h2 {
+            color: #4682B4;
+            margin-bottom: 1.2rem;
+        }
+        .intro-section p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Main Content */
         main {
-            padding: 2rem;
+            padding: 0 1rem;
         }
+        main h2 {
+            text-align: center;
+            color: #4682B4;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 2rem;
+        }
+
+        /* Service Items */
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .service-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+        .service-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .service-item div {
+            padding: 1rem;
+            text-align: left;
+        }
+        .service-item h3 {
+            color: #4682B4;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Google Reviews */
+        .reviews-section {
+            margin: 3rem auto;
+            max-width: 800px;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .reviews-section h2 {
+            color: #4682B4;
+        }
+
+        /* Footer */
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
         }
-        a {
+        footer p {
+            margin: 0.5rem 0;
+        }
+        footer a {
             color: #4682B4;
             text-decoration: none;
         }
-        .service-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
+        footer a:hover {
+            text-decoration: underline;
         }
-        .service-item img {
-            width: 100%;
-            max-width: 150px;
-            height: auto;
-            border-radius: 8px;
+        footer .social-links {
+            margin: 1rem 0;
         }
-        .cta-button {
-            background: #4682B4;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
+        footer .social-links a {
+            margin: 0 10px;
         }
-        /* Hover Effects */
-        a:hover {
-            color: #3a6ea5;
-        }
-        .cta-button:hover {
-            background: #3a6ea5;
-        }
-        /* Media Queries */
+
+        /* Responsive */
         @media (max-width: 768px) {
-            .hero-section {
-                padding: 3rem 1rem;
+            .hero-section h2 {
+                font-size: 2rem;
+            }
+            .hero-section p {
+                font-size: 1rem;
             }
             nav a {
-                margin: 0 5px;
-            }
-            main {
-                padding: 1rem;
-            }
-            .service-item {
-                flex-direction: column;
-                align-items: flex-start;
+                margin: 0 8px;
+                font-size: 0.9rem;
             }
         }
+
         @media (max-width: 480px) {
-            h2 {
-                font-size: 1.5rem;
+            .hero-section {
+                padding: 4rem 1rem;
+            }
+            .intro-section, .reviews-section {
+                padding: 0 0.5rem;
             }
             .cta-button {
-                padding: 0.5rem 1rem;
-                font-size: 0.9rem;
+                padding: 0.6rem 1.2rem;
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Skip Link for Accessibility -->
-    <a href="#main" class="skip-link" style="position: absolute; top: -40px; left: 0; background: #4682B4; color: white; padding: 0.5rem; z-index: 100;">Skip to Content</a>
+    <a href="#main" class="skip-link">Skip to Content</a>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <img src="images/logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
+        <img src="assets/img/logo.jpg" alt="Able Aide Logo" />
         <h1>Able Aide</h1>
         <p>Your Journey, Our Support</p>
     </header>
 
-    <!-- Navigation Menu -->
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="faqs.html">FAQs</a>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Hero Section with Background Image -->
-    <section class="hero-section">
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
         <h2>Welcome to Able Aide</h2>
-        <p>We specialize in providing personalized NDIS support services across Australia.</p>
-        <a href="#services" class="cta-button" aria-label="Explore Our Services">Explore Our Services</a>
+        <p>We specialize in providing personalized disability support services across Melbourne and Victoria.</p>
+        <a href="#services" class="cta-button">Explore Our Services</a>
     </section>
 
-    <!-- SEO-Optimized Intro Section -->
-    <section style="margin: 2rem auto; max-width: 800px; text-align: center;">
+    <!-- Intro Section -->
+    <section class="intro-section">
         <h2>Professional Disability Support Services in Melbourne</h2>
         <p>
-            At <strong>Able Aide</strong>, we provide compassionate and reliable <strong>disability support workers</strong> who assist NDIS participants with daily living tasks, personal care, and independent living goals.
-            Whether you need help at home, in the community, or with managing your NDIS plan, our friendly team is here to support you.
+            At <strong>Able Aide</strong>, we provide compassionate and reliable <strong>disability support workers</strong> who assist individuals with daily living tasks, personal care, and achieving independent living goals.
         </p>
         <p>
-            We proudly serve clients across <strong>Melbourne</strong>, including:
-            Footscray, Sunshine, Werribee, Dandenong, and surrounding areas.
+            Whether you need support at home, in the community, or with managing your NDIS plan, our friendly and professional team is here to help.
         </p>
         <p>
-            <a href="disability-support-worker.html" class="cta-button">Learn More About Our Workers</a>
+            We proudly serve clients across <strong>Melbourne</strong> and surrounding areas, including:
+            <strong>Werribee, Sunshine, Footscray, Dandenong, and Geelong</strong>.
         </p>
+        <a href="#contact" class="cta-button">Get in Touch Today</a>
     </section>
 
-    <!-- Main Content -->
+    <!-- Main Services -->
     <main id="main">
         <h2 id="services">Our Services</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        <div class="service-container">
             <div class="service-item">
-                <img src="images/Core Supports.jpg" alt="Daily Living Assistance and Personal Care Support Worker Services" loading="lazy">
+                <img src="assets/img/core_supports.jpg" alt="Core Supports: Daily living assistance and personal care" loading="lazy" />
                 <div>
                     <h3>Core Supports</h3>
                     <p>Daily living assistance, personal care, household tasks, and community participation.</p>
@@ -203,7 +365,7 @@
             </div>
 
             <div class="service-item">
-                <img src="images/Capacity Building.jpg" alt="Skill Development and Employment Readiness Support Services" loading="lazy">
+                <img src="assets/img/capacity_building.jpg" alt="Capacity Building: Skill development and employment readiness" loading="lazy" />
                 <div>
                     <h3>Capacity Building</h3>
                     <p>Skill development, education, employment readiness, and independent living skills.</p>
@@ -211,7 +373,7 @@
             </div>
 
             <div class="service-item">
-                <img src="images/SC.jpg" alt="Support Coordination Services for NDIS Participants" loading="lazy">
+                <img src="assets/img/support_coordination.jpg" alt="Support Coordination: Navigating the NDIS system" loading="lazy" />
                 <div>
                     <h3>Support Coordination</h3>
                     <p>Assistance navigating the NDIS system, connecting with service providers, and managing your plan.</p>
@@ -219,7 +381,7 @@
             </div>
 
             <div class="service-item">
-                <img src="images/Plan Management.jpg" alt="NDIS Plan Management Services Coming Soon" loading="lazy">
+                <img src="assets/img/plan_management.jpg" alt="Plan Management: Coming soon" loading="lazy" />
                 <div>
                     <h3>Plan Management (Coming Soon)</h3>
                     <p>Managing funding, invoices, and service providers on your behalf.</p>
@@ -227,26 +389,31 @@
             </div>
         </div>
 
-        <!-- Google Reviews Section -->
-        <section style="margin-top: 3rem; text-align: center;">
-            <h2>What Our Clients Say</h2>
-            <p>We’d love to hear from you! See what others are saying about us:</p>
-            <p><a href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID" target="_blank" class="cta-button">Leave a Review</a></p>
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <h2>We Value Your Feedback</h2>
+            <p>Your experience matters. Help others learn about our service by sharing your thoughts.</p>
+            <a href="https://www.google.com/search?q=Able+Aide+Pty+Ltd" target="_blank" class="cta-button">Leave a Google Review</a>
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>Contact Us:</p>
+    <!-- Footer -->
+    <footer id="contact">
+        <p><strong>Contact Us</strong></p>
+        <p>Phone: <strong>0435 039 110</strong></p>
         <p>Email: <a href="mailto:able.aide@outlook.com">able.aide@outlook.com</a></p>
-        <p>Phone: 0435 039 110</p>
-        <div>
-            <a href=" https://www.facebook.com/profile.php?id=61554652734205">Facebook</a> |
-            <a href=" https://twitter.com/AbleAide91 ">X</a> |
-            <a href="https://www.tiktok.com/ @ableaide">TikTok</a>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61554652734205" target="_blank">Facebook</a> |
+            <a href="https://twitter.com/AbleAide91" target="_blank">Twitter (X)</a> |
+            <a href="https://www.tiktok.com/@ableaide" target="_blank">TikTok</a>
         </div>
+
         <p>
-            Ready to get started? <a href="contact.html" style="color: #4682B4; font-weight: bold;">Contact Us Today</a>
+            Ready to get started? <a href="mailto:able.aide@outlook.com" style="color: #4682B4; font-weight: bold;">Contact Us Today</a>
+        </p>
+        <p style="font-size: 0.9em; margin-top: 1rem;">
+            &copy; 2025 Able Aide Pty Ltd. All rights reserved.
         </p>
     </footer>
 </body>
