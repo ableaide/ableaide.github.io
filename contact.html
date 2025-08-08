@@ -21,6 +21,9 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.ableaide.com.au/contact.html" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+
     <!-- Google Analytics (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-651FXYJL03"></script>
     <script>
@@ -377,15 +380,17 @@
         <section>
             <h2>Send Us a Message</h2>
             <div class="contact-form">
-                <div class="logo-input">
-                    <img src="images/logo.jpg" alt="Able Aide Logo">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="tel" name="phone" placeholder="Your Phone (Optional)">
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Submit</button>
-                <img src="images/contact.jpg" alt="Contact Us - Able Aide Support Team" loading="lazy">
+                <form action="https://formspree.io/f/movlpbyr" method="POST">
+                    <div class="logo-input">
+                        <img src="images/logo.jpg" alt="Able Aide Logo">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                    <img src="images/contact.jpg" alt="Contact Us - Able Aide Support Team" loading="lazy">
+                </form>
             </div>
         </section>
 
