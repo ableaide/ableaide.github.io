@@ -301,6 +301,7 @@
             margin: 0 12px;
             font-weight: bold;
         }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero-section h2 {
@@ -381,9 +382,9 @@
             <h2>Send Us a Message</h2>
             <div class="contact-form">
                 <form action="https://formspree.io/f/movlpbyr" method="POST">
-                    <!-- Hidden redirect field -->
+                    <!-- Hidden redirect to thank-you page -->
                     <input type="hidden" name="_next" value="https://www.ableaide.com.au/thank-you.html" />
-                    <!-- Scroll to top after submission -->
+                    <!-- Auto-scroll to top after submit -->
                     <input type="hidden" name="_scroll_to_top" value="true" />
 
                     <div class="logo-input">
@@ -394,6 +395,7 @@
                     <input type="tel" name="phone" placeholder="Your Phone (Optional)">
                     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                     <button type="submit">Submit</button>
+                    <!-- ✅ Fixed image path: lowercase, no spaces -->
                     <img src="images/contact.jpg" alt="Contact Us - Able Aide Support Team" loading="lazy">
                 </form>
             </div>
