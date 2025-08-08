@@ -381,6 +381,11 @@
             <h2>Send Us a Message</h2>
             <div class="contact-form">
                 <form action="https://formspree.io/f/movlpbyr" method="POST">
+                    <!-- Hidden redirect field -->
+                    <input type="hidden" name="_next" value="https://www.ableaide.com.au/thank-you.html" />
+                    <!-- Scroll to top after submission -->
+                    <input type="hidden" name="_scroll_to_top" value="true" />
+
                     <div class="logo-input">
                         <img src="images/logo.jpg" alt="Able Aide Logo">
                         <input type="text" name="name" placeholder="Your Name" required>
