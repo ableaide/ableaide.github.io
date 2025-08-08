@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Able Aide</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Learn about Able Aide, a trusted provider of personalized NDIS support services across Australia. Empowering individuals with disabilities to live their best lives.">
-    <meta name="keywords" content="NDIS support, disability services, community support, personalized care">
-    <meta name="author" content="Able Aide">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Able Aide Disability Support Services</title>
 
-    <!-- Google Tag (gtag.js) -->
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn about Able Aide, a compassionate NDIS support provider serving Melbourne, Werribee, and Geelong. Committed to independence, dignity, and personalized care." />
+    <meta name="keywords" content="NDIS support, disability services Melbourne, personalized care, support worker, community participation" />
+    <meta name="author" content="Able Aide Pty Ltd" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="About Us | Able Aide" />
+    <meta property="og:description" content="Compassionate NDIS support services in Melbourne. Learn about our mission, values, and team." />
+    <meta property="og:image" content="https://www.ableaide.com.au/images/main_page_pic.jpg" />
+    <meta property="og:url" content="https://www.ableaide.com.au/about.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ableaide.com.au/about.html" />
+
+    <!-- Google Analytics (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-651FXYJL03"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -18,100 +30,290 @@
         gtag('config', 'G-651FXYJL03');
     </script>
 
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Able Aide Pty Ltd",
+        "url": "https://www.ableaide.com.au",
+        "logo": "https://www.ableaide.com.au/images/logo.jpg",
+        "description": "Able Aide provides personalized NDIS disability support services across Melbourne, Werribee, and Geelong.",
+        "foundingLocation": "Victoria, Australia",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "0435 039 110",
+          "contactType": "Customer Service",
+          "areaServed": "Australia",
+          "availableLanguage": "English"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61554652734205",
+          "https://www.tiktok.com/@ableaide",
+          "https://x.com/AbleAideSupport"
+        ]
+      }
+    }
+    </script>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset & Base */
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #fff;
+        }
+
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #4682B4;
+            color: white;
+            padding: 0.5rem 1rem;
+            z-index: 1000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Header */
         header {
             background: #4682B4;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 1.5rem 1rem;
         }
+        header img {
+            max-width: 160px;
+            border-radius: 8px;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Navigation */
         nav {
             background: #f9f9f9;
             padding: 1rem;
             text-align: center;
+            border-bottom: 1px solid #eee;
         }
         nav a {
             color: #4682B4;
             text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1.1rem;
         }
-        main {
-            padding: 2rem;
+        nav a:hover {
+            text-decoration: underline;
         }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        a {
-            color: #4682B4;
-            text-decoration: none;
-        }
+
+        /* Hero Section */
         .hero-section {
-            background: url('images/Background 1.jpg') no-repeat center center/cover;
+            background: url('images/background_1.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 5rem 1rem;
+            padding: 7rem 1rem;
+            position: relative;
         }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-section > * {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .hero-section p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        main {
+            padding: 2.5rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        main h2 {
+            color: #4682B4;
+            margin: 2.5rem 0 1.2rem;
+            font-size: 2.1rem;
+        }
+        main p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        main ul {
+            margin: 1rem 0 1.5rem 2rem;
+            line-height: 1.8;
+        }
+        main ul li {
+            margin-bottom: 0.6rem;
+        }
+
+        /* Mission Section */
         .mission-section {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 3rem;
             align-items: center;
-        }
-        .mission-section img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 8px;
+            margin: 2rem 0;
         }
         .mission-text {
             flex: 1;
+            min-width: 300px;
         }
+        .mission-section img {
+            flex: 1;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Gallery */
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 1.5rem;
             justify-content: center;
+            margin: 2rem 0;
         }
         .gallery img {
             width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
+            max-width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
+
+        /* Call to Action */
         .cta {
             background: #4682B4;
             color: white;
             text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-            border-radius: 8px;
+            padding: 2.5rem;
+            margin: 3rem auto;
+            border-radius: 12px;
+            max-width: 900px;
+        }
+        .cta h2 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 2.2rem;
+        }
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: rgba(255,255,255,0.95);
         }
         .cta a {
             background: white;
             color: #4682B4;
-            padding: 0.5rem 1rem;
+            padding: 0.8rem 2rem;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 6px;
             font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .cta a:hover {
+            background: #f0f0f0;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0.6rem 0;
+        }
+        footer a {
+            color: #4682B4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .social-links {
+            margin: 1.2rem 0;
+        }
+        footer .social-links a {
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section h2 {
+                font-size: 2.2rem;
+            }
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 5rem 1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+            .cta {
+                padding: 1.8rem;
+            }
+            .cta h2 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
+    <a href="#main" class="skip-link">Skip to Content</a>
+
+    <!-- Header -->
     <header>
-        <img src="images/Logo.jpg" alt="Able Aide Logo" style="max-width: 150px;">
+        <img src="images/logo.jpg" alt="Able Aide Logo" />
         <h1>About Us</h1>
     </header>
 
-    <!-- Navigation Menu -->
+    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -120,25 +322,25 @@
         <a href="faqs.html">FAQs</a>
     </nav>
 
-    <!-- Hero Section with Background Image -->
+    <!-- Hero Section -->
     <section class="hero-section">
         <h2>Welcome to Able Aide</h2>
         <p>We are dedicated to empowering individuals with disabilities through personalized NDIS support services.</p>
     </section>
 
     <!-- Main Content -->
-    <main>
-        <!-- Introduction Section -->
+    <main id="main">
+        <!-- Our Purpose -->
         <section>
             <h2>Our Purpose</h2>
             <p>
-                At Able Aide, we are driven by a singular purpose: to empower individuals with disabilities to live their best lives. 
+                At <strong>Able Aide</strong>, we are driven by a singular purpose: to empower individuals with disabilities to live their best lives. 
                 As a trusted provider of personalized NDIS support services, we are committed to fostering independence, building meaningful connections, 
                 and creating opportunities for growth.
             </p>
         </section>
 
-        <!-- Mission Section -->
+        <!-- Our Mission -->
         <section class="mission-section">
             <div class="mission-text">
                 <h2>Our Mission</h2>
@@ -148,10 +350,10 @@
                     the complexities of the NDIS system, we are here to walk alongside you every step of the way.
                 </p>
             </div>
-            <img src="images/Main page pic.jpg" alt="Empowering Participants Through Personalized Support">
+            <img src="images/main_page_pic.jpg" alt="Empowering Participants Through Personalized Support" loading="lazy" />
         </section>
 
-        <!-- Approach Section -->
+        <!-- Our Approach -->
         <section>
             <h2>Our Approach</h2>
             <p>
@@ -161,7 +363,7 @@
             </p>
         </section>
 
-        <!-- Team Section -->
+        <!-- Our Team -->
         <section>
             <h2>Our Team</h2>
             <p>
@@ -171,7 +373,7 @@
             </p>
         </section>
 
-        <!-- Values Section -->
+        <!-- Our Values -->
         <section>
             <h2>Our Values</h2>
             <ul>
@@ -182,7 +384,7 @@
             </ul>
         </section>
 
-        <!-- Services Section -->
+        <!-- Our Services -->
         <section>
             <h2>Our Services</h2>
             <p>
@@ -192,7 +394,7 @@
             </p>
         </section>
 
-        <!-- Community Gallery Section -->
+        <!-- Our Community -->
         <section>
             <h2>Our Community</h2>
             <p>
@@ -200,12 +402,12 @@
                 environments where everyone can thrive.
             </p>
             <div class="gallery">
-                <img src="images/Community 1.jpg" alt="Community Members Engaging in Activities">
-                <img src="images/Community 2.jpg" alt="Inclusive Environment for All">
+                <img src="images/community_1.jpg" alt="Community Members Engaging in Activities" loading="lazy" />
+                <img src="images/community_2.jpg" alt="Inclusive Environment for All" loading="lazy" />
             </div>
         </section>
 
-        <!-- Call-to-Action Section -->
+        <!-- Call to Action -->
         <section class="cta">
             <h2>Ready to Get Started?</h2>
             <p>Contact us today to learn more about our services and how we can support you or your loved ones.</p>
@@ -213,15 +415,15 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>Contact Us:</p>
+        <p><strong>Contact Us</strong></p>
         <p>Email: <a href="mailto:able.aide@outlook.com">able.aide@outlook.com</a></p>
-        <p>Phone: 0435 039 110</p>
-        <div>
-            <a href="https://www.facebook.com/profile.php?id=61554652734205">Facebook</a> |
-            <a href="https://twitter.com/AbleAide91">X</a> |
-            <a href="https://www.tiktok.com/@ableaide">TikTok</a>
+        <p>Phone: <strong>0435 039 110</strong></p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61554652734205" target="_blank">Facebook</a> |
+            <a href="https://www.tiktok.com/@ableaide" target="_blank">TikTok</a> |
+            <a href="https://x.com/AbleAideSupport" target="_blank">X (Twitter)</a>
         </div>
     </footer>
 </body>
